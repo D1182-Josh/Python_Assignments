@@ -1,0 +1,11 @@
+num =input("Write a positive number: ")
+a = 0
+if num.isdigit() and int(num) > 0:
+  for i in num:
+      a += int(i) **len(num)
+  if a == int(num):
+      print(num, " is an Armstrong number")   
+  else:
+      print(num, " is not an Armstrong number")
+else:
+  print("It is an invalid entry. Don't use non-numeric, float, or negative values!")
