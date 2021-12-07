@@ -1,9 +1,0 @@
-num = int(input("Write a number is bigger than 1 :"))
-total = 0
-for i in range(2,num):
-  if num % i == 0:
-    total += i
-if total > 1 :
-  print(num, "is not Prime Number")     
-else:
-  print(num , "is Prime Number")
