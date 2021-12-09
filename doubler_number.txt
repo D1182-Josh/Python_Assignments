@@ -1,0 +1,30 @@
+########Given two integer values, return their sum. If the two values are the same, then return double their sum.
+
+
+
+
+  For example:
+
+   Test                       	Result
+print(sum_double(1, 2))
+                                    3
+print(sum_double(5, 7))
+                                    12
+print(sum_double(5, 5))
+                                    20
+###############
+
+num1=int(input("enter a number:"))
+num2=int(input("enter a number:"))
+
+def sum_double(x, y):
+
+    if x == y :
+
+        print((x + y)*2)
+
+    else:
+
+        print(x + y)
+
+sum_double(num1,num2)
