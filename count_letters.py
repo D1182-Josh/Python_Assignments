@@ -12,9 +12,23 @@ hippo runs to us!
 {'s': 2, 'r': 1, 't': 1, 'h': 1, 'n': 1, 
 'i': 1, 'u': 2, 'o': 2, 'p': 2, ' ': 3, '!': 1}  #
 
+1.solution:
+
 sent = input("Write a sentences: ")
 dictionary = dict()
 for i in sent:
     dictionary[i] = sent.count(i)
     
 print(dictionary)
+
+2.solution:
+
+ sentence = input("Enter a sentence: ")
+word = {}
+for i in sentence :
+  if i in word:
+    word[i] += 1
+  else:
+    word[i] = 1
+print(word)       
+
