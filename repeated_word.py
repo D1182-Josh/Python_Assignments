@@ -6,4 +6,7 @@ output:  Emma appeared 2 times
 
  #SOLUTION
 
+    str_x ="Emma is a good developer. Emma is writer."
+    print("Emma appeared {} times.".format(str_x.count("Emma")))
+
     
