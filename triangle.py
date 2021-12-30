@@ -5,4 +5,8 @@
 
     #SOLUTION
 
-
+sides = list(map(int, input("").split()))
+if abs(sides[0] - sides[1]) < sides[2] and abs(sides[1] - sides[2]) < sides[0] and abs(sides[0] - sides[2]) < sides[1] :
+  print("It is a triangle!")
+else:
+  print("It is not a triangle!")
