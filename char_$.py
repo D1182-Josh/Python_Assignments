@@ -5,4 +5,6 @@
 
 #SOLUTION
 
-
+text = input("")
+text =text[0] + text[1:].replace(text[0], "$")
+text
