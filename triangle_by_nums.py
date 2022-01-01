@@ -29,5 +29,13 @@ for i in range(num) :
 
   #SOLUTION3
 
+num = int(input(""))
+space = (2 * num) - 2
+for i in range(num) :
+    print(" " * space + (i+1) * "* ")
+    space -= 2
 
+  #SOLUTION4
+
+  
 
