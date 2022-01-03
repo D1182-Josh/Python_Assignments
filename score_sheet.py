@@ -4,4 +4,7 @@
 
     #SOLUTION
 
-
+num = int(input(""))
+scores = list(map(int, input("").split()))
+runner_up =sorted(set(scores))[-2]
+print(runner_up)
