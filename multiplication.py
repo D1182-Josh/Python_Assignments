@@ -5,4 +5,6 @@
 
     #SOLUTION
 
-
+num = int(input("Please enter a number : "))
+for i in range(11):
+  print("{} x {} = {}".format(num,i,num*i))
