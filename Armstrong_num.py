@@ -4,4 +4,10 @@
 
     #SOLUTION
 
+num = input("")
+toplam = sum([int(i) ** len(num) for i in num])
 
+if int(num) == toplam :
+  print(num, "is a armstrong number")
+else:
+  print(num, "is not a armstrong number")
