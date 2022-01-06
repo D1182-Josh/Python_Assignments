@@ -4,7 +4,7 @@
 
 
     #SOLUTION
-#1
+#1 one after the other / down by down
 
 for i in range(1,11) :
   for j in range(1,11):
