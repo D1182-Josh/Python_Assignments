@@ -33,5 +33,10 @@ while j <= 10 :
   j += 1
   print()
 
-  
+#3
 
+
+for i in range(1,11):
+ for j in range(1,11):
+  print(format(j,"2d"),"x",format(i,"2d"),"=",format(i*j,"3d"),"|", end="")
+ print()
