@@ -15,6 +15,23 @@ for i in range(1,11) :
 
 #2
 
+j = 1
+while j <= 10 :
+  for i in range(1,11) :
+    if len(str(i))==1 and len(str(j))==1 and len(str(i*j))==1:
+      print(" {} x  {} =   {}".format(i,j,i*j), end = "|")
+    elif len(str(i))==1 and len(str(j))==1 and len(str(i*j))==2:
+      print(" {} x  {} =  {}".format(i,j,i*j), end = "|")
+    elif len(str(i))==2 and len(str(j))==1 and len(str(i*j))==2:
+      print("{} x  {} =  {}".format(i,j,i*j), end = "|")
+    elif len(str(i))==1 and len(str(j))==2 and len(str(i*j))==2:
+      print(" {} x {} =  {}".format(i,j,i*j), end = "|")
+    elif len(str(i))==2 and len(str(j))==2 and len(str(i*j))==3:
+      print("{} x {} = {}".format(i,j,i*j), end = "|")
+    else:
+      print(" {} x {} ={}".format(i,j,i*j), end = "|")
+  j += 1
+  print()
 
-
+  
 
