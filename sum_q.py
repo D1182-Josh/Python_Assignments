@@ -4,4 +4,12 @@
 
     #SOLUTION
 
-    
+toplam = 0
+while True :
+  num = input("Please enter number, press q to quit ")
+  if num == "q" :
+    break
+  else :
+    toplam += int(num)
+
+print("sum of numbers : " , toplam)    
