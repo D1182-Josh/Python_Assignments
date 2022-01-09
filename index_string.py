@@ -9,4 +9,8 @@ output : {0:'c', 1:'l', 2:'a', 3:'r', 4:'u', 5:'s', 6:'w', 7:'a', 8:'y'}
 
     #SOLUTION
  
-
+text = input("")
+sonuc ={}
+for i in range(len(text)):
+  sonuc[i] = text[i]
+print(sonuc)
