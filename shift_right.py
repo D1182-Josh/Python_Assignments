@@ -5,4 +5,8 @@
 
     #SOLUTION
 
-    
+#kaç birim kaydırmak istediğimiz sayıyı gidiyoruz.
+num = int(input(""))
+liste = [1, 2, 3, 4, 5, 6]
+new_liste = liste[len(liste)- num:] +liste[0:len(liste)- num]
+new_liste    
