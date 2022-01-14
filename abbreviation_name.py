@@ -4,4 +4,5 @@
 
     #SOLUTION
 
-
+name = list(map(str.title, input("").split()))
+print("{}.{}.{}".format(name[0][0],name[1][0],name[2]))
