@@ -4,4 +4,9 @@
 
     #SOLUTION
 
-   
+kelime = input("")
+y_kelime = ""
+for i in range(len(kelime)) :
+  if i % 2 == 0 :
+    y_kelime += kelime[i]
+print(y_kelime)   
