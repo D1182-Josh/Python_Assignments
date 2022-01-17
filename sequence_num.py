@@ -4,4 +4,5 @@
 
     #SOLUTION
 
-    
+number = input("")
+print(len(set(number)) == len(number))    
