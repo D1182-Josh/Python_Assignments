@@ -14,4 +14,5 @@ INPUT :171 --> OUTPUT:True
 
     #SOLUTION
 
-    
+num = input("")
+print(int(num) % sum([int(i) for i in num]) == 0)    
