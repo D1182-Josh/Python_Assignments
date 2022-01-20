@@ -12,4 +12,8 @@ For Example :
 
    #SOLUTION
 
-   
+list1=[195, 488, 142, 626, 180]
+list2=["New York", "Alabama", "Hawaii", "Vermont", "West Virginia"]
+
+new = list(zip(list1, list2))
+print(new)    
