@@ -6,7 +6,8 @@
 #    INPUT : 6 ---> "Loves me,Loves me not, Loves me, Loves me not, Loves me, LOVES ME NOT"
 #    ınput : 1 ---> "LOVES ME"
 
-    #SOLUTION
+    #SOLUTION1
+
 n = int(input(""))
 papatya = ["Loves me", "Loves me not" ]
 yeni_papatya = []
