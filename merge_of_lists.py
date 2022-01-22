@@ -16,4 +16,12 @@ list1=[195, 488, 142, 626, 180]
 list2=["New York", "Alabama", "Hawaii", "Vermont", "West Virginia"]
 
 new = list(zip(list1, list2))
-print(new)    
+print(new)
+
+    #SOLUTION
+
+merge_list = []
+for i in range(0, len(list1)) :
+  merge_list += [(list1[i], list2[i])]
+
+print(merge_list)    
