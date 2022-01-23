@@ -8,4 +8,6 @@
 
     #SOLUTION
 
-    
+lista = [1,2,3]
+listb = [7,3,2]
+print(lista[0] == listb[0] or lista[-1] == listb[-1])    
