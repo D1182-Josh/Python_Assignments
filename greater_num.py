@@ -4,4 +4,6 @@
 
     #SOLUTION
 
-    
+lista = list(map(int, input("").split()))
+number = int(input(""))
+print(all([i > number for i in lista]))    
