@@ -5,4 +5,13 @@
 
     #SOLUTION
 
-    
+n = int(input(""))
+faktoriyel = 1
+if n < 0 :
+  print("Lütfen negatif sayı girmeyiniz! ")
+elif n == 0 :
+  print("0 faktoriyel 1 e eşittir.")
+else :
+  for i in range(n,0,-1) :
+    faktoriyel *= i
+    print("{} faktoriyel {} sayısına eşittir.".format(n, faktoriyel))    
