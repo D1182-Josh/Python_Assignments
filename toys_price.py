@@ -21,4 +21,16 @@
 
     #SOLUTION
 
-    
+n, k = list(map(int, input("").split()))
+prices = list(map(int, input("").split()))
+count = 0
+total = 0
+
+for i in sorted(prices) :
+  if total + i <= k :
+    count +=1
+    total += i
+  else:
+    break
+
+print(count)    
