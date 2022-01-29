@@ -11,4 +11,13 @@
 
     #SOLUTION
 
-    
+prime = [2]
+n = int(input(""))
+for i in range(3,n+1) :
+  for j in range(2,i) :
+    if i % j == 0 :
+      break
+  else :
+    prime += [i]
+
+print(",".join([str(k) for k in prime]))    
