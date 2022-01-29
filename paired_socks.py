@@ -10,4 +10,12 @@
 
     #SOLUTION
 
-    
+socks = list(map(int, input("").split()))
+socks_dict = {}
+for i in set(socks) :
+  socks_dict[i] = socks.count(i)
+
+pairs = 0
+for j in socks_dict.values() :
+  pairs += j // 2
+print(pairs)    
