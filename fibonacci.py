@@ -4,4 +4,10 @@
 
     #SOLUTION
 
-    
+a,b = 0,1
+fibonacci = [a,b]
+for i in range(98) :
+  a,b = b,a+ b
+  fibonacci += [b]
+print(fibonacci)
+print(len(fibonacci))    
