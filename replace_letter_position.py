@@ -5,4 +5,6 @@
 
     #SOLUTION
 
-    
+alpha = "abcdefghijklmnopqrstuvwxyz"
+string = input("").lower()
+print(* [alpha.index(i)+1 for i in string if i.isalpha()])    
