@@ -9,4 +9,13 @@
 
     #SOLUTION
 
-    
+s = input("")
+s_dict = {}
+
+for i in s :
+  if i in s_dict :
+    s_dict[i] +=1
+  else :
+    s_dict[i] = 1
+  
+print(len(set(s_dict.values())) == 1)    
