@@ -4,4 +4,12 @@
 
     #SOLUTION
 
+population = 1000
+year = 0
+
+while population <= 1200 :
+  population += (population * 0.02) + 50
+  year += 1
+
+print(year)
     
