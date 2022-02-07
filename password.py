@@ -4,4 +4,18 @@
 
     #SOLUTION
 
-    
+name = input("Lütfen isminizi giriniz :")
+password = input("Lütfen şifrenizi giriniz :")
+
+while True :
+  if name == "Melek" and password == "1234" :
+    print("Başarılı bir şekilde giriş yaptınız!")
+    break
+  elif name != "Melek" and password == "1234" :
+    print("Lütfen kullanıcı isminizi kontrol ediniz!")
+    name = input("Lütfen isminizi giriniz :")
+    password = input("Lütfen şifrenizi giriniz :")
+  elif name != "Melek" and password != "1234" :
+    print("Lütfen kullanıcı isminizi ve şifrenizi kontrol ediniz!")
+    name = input("Lütfen isminizi giriniz :")
+    password = input("Lütfen şifrenizi giriniz :")    
