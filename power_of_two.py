@@ -8,6 +8,21 @@
         Explanation: 2⁰=1
 
 
-   #SOLUTION
+   #SOLUTION1
 
-   
+n = int(input(""))
+n_list = []
+for i in range(2,n+1) :
+  if n % i == 0 :
+    n_list += [i]
+all([i % 2 == 0 for i in n_list])
+
+    #SOLUTION2
+
+x = 1 
+for i in range(x) :
+  if 2 ** i == x :
+    print(True)
+    break
+else:
+  print(False)    
