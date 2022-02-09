@@ -20,4 +20,15 @@
 
      #SOLUTION
 
-     
+ops = ["5","-2","4","C","D","9","+","+"]
+total = []
+for i in range(len(ops)):
+  if ops[i]=='C':
+    total.pop()
+  elif ops[i]=='D':
+    total.append(2*total[-1])
+  elif ops[i]=='+':
+    total.append(total[-1]+total[-2])
+  else:
+    total.append(int(ops[i]))
+print(sum(total))     
