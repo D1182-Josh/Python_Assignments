@@ -4,4 +4,10 @@
 
     #SOLUTION
 
-    
+cumle = input("").lower()
+yeni_cumle = ""
+alpha = "abcdefghijklmnopqrstuvwxyz"
+for i in cumle :
+  if i.isalpha() :
+    yeni_cumle += i
+print(set(alpha) - set(yeni_cumle) == set())    
