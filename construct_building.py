@@ -9,4 +9,14 @@
 
      #SOLUTION
 
-     
+num = int(input(""))
+toplam = 0
+count = 0
+while toplam < num :
+  count += 1
+  toplam += count ** 3
+
+if toplam == num :
+  print(count)
+else:
+  print(-1)     
