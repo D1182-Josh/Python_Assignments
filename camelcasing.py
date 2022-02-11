@@ -10,4 +10,11 @@
 
      #SOLUTION
 
-     
+s = input("")
+new_s = ""
+for i in s :
+  if i.isupper() :
+    new_s += " " + i
+  else:
+    new_s += i
+print(new_s)     
