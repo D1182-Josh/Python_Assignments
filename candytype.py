@@ -10,4 +10,11 @@
 
         #SOLUTION
 
-        
+candyType = [6,6,6,6,1,2]
+len(candyType) / 2
+if len(set(candyType)) == len(candyType) / 2:
+  print(len(set(candyType)))
+elif len(candyType) / 2 > len(set(candyType)) :
+  print(len(set(candyType)))
+else:
+  print(len(candyType) / 2)        
