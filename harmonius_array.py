@@ -16,4 +16,13 @@
 
      #SOLUTION
 
-    
+nums = [1,3,2,2,5,2,3,7]
+new_num = []
+x = sorted(set(nums))
+for i in range(1,len(x)) :
+	if abs(x[i]-x[i-1])==1 :
+		new_num.append(nums.count(x[i]) + nums.count(x[i-1]))
+if len(new_num) != 0 :
+  print(max(new_num))
+else :
+  print(0)    
