@@ -10,7 +10,17 @@ Task
 
     #SOLUTION
 
+#output = [1,2,3,1,2,3]
+liste =  [1,2,3,1,2,1,2,3]
+new_liste = []
+n = 2
 
+for i in range(len(liste)) :
+  new_liste += [liste[i]]
+  if new_liste.count(liste[i]) > 2 :
+    new_liste.pop()
+
+new_liste
 
 
     
