@@ -14,4 +14,22 @@
 
     #SOLUTION
 
-    
+num = input("")
+toplam = 1
+count = 0
+
+if len(num) == 1 :
+  print(count)
+else :
+  while len(num) != 1 :
+    count += 1
+    for i in num :
+      toplam *= int(i)
+    if len(str(toplam)) == 1 :
+      print(toplam)
+      break
+    else :
+      num = str(toplam)
+      toplam = 1
+
+print(count)    
