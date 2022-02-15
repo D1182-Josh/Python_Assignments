@@ -6,6 +6,17 @@
       {"koala":"zebra","camel":"horse"}
 
 
-   #SOLUTION
+   #SOLUTION1
 
-   
+invert ={ "zebra": "koala", "horse": "camel" }
+n_invert = {}
+
+for x, y in invert.items() :
+  n_invert[y] = x
+
+print(n_invert)
+ 
+    #SOLUTION2
+
+ invert ={ "zebra": "koala", "horse": "camel" }
+dict([(y,x) for x,y in invert.items()])
