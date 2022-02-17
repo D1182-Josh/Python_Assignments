@@ -8,4 +8,20 @@
 
    #SOLUTION
 
-   
+veri = ["a", "b", True, (False,1), {1:"2"}, [1,2], {"2":"two"}, {2,"3"}, "c", 23, 0]
+tip = ["int", "str", "bool", "list", "tuple", "dict"]
+total = {}.fromkeys(tip, 0)
+for i in range(len(veri)) :
+  if type(veri[i]) == str :
+    total["str"] += 1
+  elif type(veri[i]) == bool :
+    total["bool"] += 1
+  elif type(veri[i]) == tuple :
+    total["tuple"] += 1
+  elif type(veri[i]) == list :
+    total["list"] += 1
+  elif type(veri[i]) == dict :
+    total["dict"] += 1
+  elif type(veri[i]) == int :
+    total["int"] += 1
+print(list( total.values()))   
