@@ -16,6 +16,19 @@
 
     #SOLUTION
 
-    
+#Output: 'The Wind in the Willows'
+text = "THE WIND IN THE WILLOWS".lower().split()
+minor = "The In".lower().split()
+new_text = []
+
+for i in text : 
+  if i not in minor :
+    new_text += [i.capitalize()]
+  else :
+    new_text += [i.lower()]
+
+word = " ".join(new_text)
+word = word[0].upper() + word[1:]
+word    
 
 
