@@ -17,4 +17,13 @@
    #SOLUTION
 
    
+num = input("")
 
+for i in range(1, int(num)+1) :
+  print(str(i).center(6), end = "")
+print("\n+" + "  " + "-" * 60)
+for k in range(1,int(num)+ 1) :
+  print((str(k) + "|").center(3), end = " ")
+  for j in range(1, int(num)+1) :
+    print(str(k * j).center(5), end = " ")
+  print()
