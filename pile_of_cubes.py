@@ -10,4 +10,23 @@
 	pile_of_cubes(16) --> None
 
 	#SOLUTION1
+num = int(input(""))
+cube , total = 0 , 0
+while total < num :
+  cube += 1
+  total += cube ** 3
 
+print(cube if total == num else None)
+
+    #SOLUTION2
+def find_nb(m):
+    total = 0
+    n = 0
+    
+    while (total < m):
+        n = n + 1
+        total = total + n ** 3
+        
+    return n if total == m else -1
+    
+find_nb(1071225)    
