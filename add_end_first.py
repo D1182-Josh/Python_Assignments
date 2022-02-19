@@ -8,4 +8,18 @@ pi_it('Hello world !') # elloHay orldway !
 
     #SOLUTION1
 
-    
+text = "Hello world !".split()
+new_text = []
+for i in text :
+  if i.isalpha() :
+    new_text.append(i[1:] + i[0]+ "ay")
+  else :
+    new_text.append(i)
+
+" ".join(new_text)
+
+    #SOLUTION2
+
+" ".join([i[1:] + i[0]+ "ay" if i.isalpha() else i for i in input("").split()])
+
+
