@@ -10,4 +10,35 @@
 
     #SOLUTION
 
-    
+x = [["R", "P"], ["R", "S"], ["S", "P"]]
+winner = []
+
+for i in x :
+  if i[0] == i[-1] :
+    print("Draw!")
+  elif (i[0] == "R") and (i[-1] == "S") :
+    print("Rock beat Scissors")
+    winner += [1]
+  elif i[0] == "R" and i[-1] == "P" :
+    print("Paper beat Rock")
+    winner += [-1]
+  elif i[0] == "S" and i[-1] == "P" :
+    print("Scissors beat Paper")
+    winner += [1]
+  elif i[0] =="S" and i[-1] == "R" :
+    print("Rock beat Scissors") 
+    winner += [-1]
+  elif i[0] == "P" and i[-1] =="R" :
+    print("Paper beat Rock")
+    winner += [1]
+  elif i[0] == "P" and i[-1] == "S" :
+    print("Scissors beat Paper")
+    winner += [-1]
+
+if sum(winner) == 0 :
+  print("Tie")
+elif sum(winner) >= 1 :
+  print("The winner is Abigail")
+else:
+  print("The winner is Benson") 
+
