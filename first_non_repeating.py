@@ -4,4 +4,24 @@
 
     #SOLUTION1
 
+letter = input("")
 
+for i in letter :
+  if letter.count(i) == 1 :
+    print(i)
+    break
+else :
+  print(None)
+
+  #SOLUTION2
+
+
+letter = input("") #sTreSS
+lower_letter = letter.lower() #stress
+
+for i in lower_letter :
+  if lower_letter.count(i) == 1 :
+    print(letter[lower_letter.index(i)])
+    break
+else:
+  print(None)  
