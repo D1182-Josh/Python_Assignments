@@ -9,4 +9,12 @@
 
     #SOLUTION
 
-    
+baloon = [0, 0, 0, 0, 4, 0, 0, 0, 0]
+max_b = max(baloon)
+new_list = []
+for i in range(max(baloon)) :
+  new_list += [i]
+for j in range(max(baloon),-1,-1) :
+  new_list += [j]
+
+print(new_list)    
