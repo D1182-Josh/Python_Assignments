@@ -8,4 +8,16 @@
 
     #SOLUTION
 
+alpha_lower = "abcdefghijklmnopqrstuvwxyz"
+alpha_upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+new_t = ""
+text = input("")
+for i in text :
+  if i.islower() :
+    new_t += alpha_lower[(alpha_lower.index(i) + 13) %  len(alpha_lower)]
+  elif i.isupper() :
+    new_t += alpha_upper[(alpha_upper.index(i) + 13) %  len(alpha_lower)]
+  else :
+    new_t += i
     
+new_t    
