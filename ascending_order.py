@@ -10,4 +10,5 @@
 
     #SOLUTION
 
-    
+liste = [("b",1), ("c", 2), ("x", 3), ("x", 4), ("z", 0)]
+sorted(liste, key = lambda x : x[1])    
