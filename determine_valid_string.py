@@ -18,6 +18,41 @@
     -string: either YES or NO
 
 
-   #SOLUTION
+   #SOLUTION1
 
+from collections import Counter
+
+s = "aabbcdefghh"
+c= Counter(s)
+freq = Counter(c.values())
+
+if len(freq) == 1 :
+  print("YES")
+elif len(freq) == 2 :
+  if max(freq.keys()) - min(freq.keys()) == 1 and freq[max(freq.keys())] == 1 :
+    print("YES")
+  elif  min(freq.keys()) == 1 and freq[min(freq.keys())] == 1 :
+    print("YES")
+  else:
+    print("NO")
+else:
+  print("NO")
+
+  #SOLUTION2
+from collections import Counter
+def isValid(s):
+    c = Counter(s)
+    freq = Counter(c.values())
+    if len(freq) == 1:
+        return "YES"
+    elif len(freq) == 2:
+        key_max = max(freq.keys())
+        key_min = min(freq.keys())
+        if key_max - key_min == 1 and freq[key_max] == 1:
+            return "YES"
+        elif key_min == 1 and freq[key_min] == 1:
+            return "YES"
+    return "NO"
+
+isValid("aabbcd")
    
