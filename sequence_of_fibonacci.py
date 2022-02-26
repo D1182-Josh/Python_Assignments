@@ -6,4 +6,11 @@
 
     #solution
 
-    
+n = int(input(""))
+a,b = 0,1
+fibonacci = [a,b]
+while len(fibonacci) < n :
+  a,b = b , a+b 
+  fibonacci += [b]
+
+print(fibonacci)    
