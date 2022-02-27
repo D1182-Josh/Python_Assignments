@@ -5,4 +5,6 @@
 
     #SOLUTION
 
-    
+dict_empty = {0: "0"}
+
+len(dict_empty) == 1    
