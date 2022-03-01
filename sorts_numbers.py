@@ -8,6 +8,47 @@
     pos_neg_sort([]) --> []
 
 
-    #SOLUTION
+    #SOLUTION1
 
-    
+arry = [6, 3, -2, 5, -8, 2, -2]
+sıra_no = ""
+pozitif = []
+negatif = []
+
+for i in arry :
+  if i > 0 :
+    pozitif.append(i)
+    sıra_no += str(arry.index(i))
+  else:
+    negatif.append(i)
+
+pozitif.sort()
+no = 0
+for i in sıra_no :
+  negatif.insert(int(i), pozitif[no])
+  print(negatif)
+  no += 1
+
+print(negatif)
+
+    #SOLUTION2
+
+arry = [6, 3, -2, 5, -8, 2, -2]
+positive = []
+negative = []
+indeks = ""
+
+for i in arry :
+  if i > 0 :
+    indeks += str(arry.index(i))
+    positive += [i]
+  else:
+    negative += [i]
+count = 0
+for i in indeks :
+  negative.insert(int(i), sorted(positive)[count])
+  count += 1
+
+print(negative) 
+
+
