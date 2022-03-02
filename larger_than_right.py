@@ -34,7 +34,13 @@ n_arry + [arry[-1]]
 
    #SOLUTION3
 
-   
+
+print(all([arry[0] > i for i in arry[1:]]))
+print(all([arry[1] > i for i in arry[2:]]))
+print(all([arry[2] > i for i in arry[3:]]))
+print(all([arry[3] > i for i in arry[4:]])) 
+print(all([arry[4] > i for i in arry[5:]]))
+print(all([arry[5] > i for i in arry[6:]]))   
 
 
 
