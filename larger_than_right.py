@@ -24,6 +24,19 @@ n_arry + [arry[-1]]
 
     #SOLUTION2
 
-    
+arry = [5, 5, 5, 5, 5, 5]
+n_arry = []
+for i in  range(0,len(arry)-1) :
+  if all([arry[i] > j for j in arry[i+1:]]) == True :
+    n_arry += [arry[i]]
 
-    
+n_arry + [arry[-1]]    
+
+   #SOLUTION3
+
+   
+
+
+
+
+
