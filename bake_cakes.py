@@ -26,6 +26,13 @@ else :
 
     #SOLUTION2
 
+cake = {"flour" : 500, "sugar": 200, "eggs": 1}
+have = {"flour": 1200, "sugar": 1200, "eggs": 5, "milk": 200}
+new_cake = []
+
+for i,j in cake.items():
+  new_cake.append(have.get(i,0)//j)
+print(min(new_cake))
 
 
 
