@@ -9,6 +9,15 @@
         Input: s = "leetcode"
         Output: "leotcede"
 
-    #SOLUTION
+    #SOLUTION1
+
+s = "hello"
+indeks = [i for i in range(len(s)) if s[i] in "AEIOUaeiou"]
+consonants = [j for j in s if j not in "AEIOUaeiou" ]
+vowels = [k for k in s if k in "AEIOUaeiou"][::-1]
+
+for i in range(len(indeks)) :
+  consonants.insert(indeks[i], vowels[i])
+print("".join(consonants))
 
     
