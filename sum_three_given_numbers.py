@@ -5,4 +5,5 @@
 
     #SOLUTION
 
-    
+nums = list(map(int, input().split()))
+print(sum(nums) * 3 if nums[0] == nums[1] == nums[2] else sum(nums))    
