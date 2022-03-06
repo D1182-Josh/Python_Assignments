@@ -27,6 +27,13 @@ vowels = "aeiouAEIOU"
 text_vowels = [i for i in text if i in vowels]
 "".join([i if i not in text_vowels else text_vowels.pop(-1) for i in text])
 
+    #SOLUTION3
+
+s = "hello"
+vowels = [k for k in s if k in "AEIOUaeiou"][::-1]
+
+if i not in for i in s
+
     #
 
 
