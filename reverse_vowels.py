@@ -34,6 +34,26 @@ vowels = [k for k in s if k in "AEIOUaeiou"][::-1]
 
 if i not in for i in s
 
+    #SOLUTION4
+
+s = "hello"
+vowels = "aeiouAEIOU"
+text_vowels = []
+for i in s:
+  if i in vowels:
+      text_vowels.append(i)
+
+new_s = []
+count = 0
+for j in s:
+  if j not in text_vowels:
+    new_s.append(j)
+  else:
+    new_s.append(text_vowels[::-1][count])
+    count += 1
+
+print("".join(new_s))
+
     #
 
 
