@@ -54,7 +54,26 @@ for j in s:
 
 print("".join(new_s))
 
-    #
+    #SOLUTION5
+
+s = "leetcode"
+vowels = "aeiouAEIOU"
+text_vowels = []
+for i in s:
+  if i in vowels:
+      text_vowels.append(i)
+
+reverse_vowels = text_vowels[::-1]
+print(reverse_vowels)
+
+new_s = []
+count = 0
+for j in s:
+  if j not in text_vowels:
+    new_s.append(j)
+  else:
+    new_s.append(reverse_vowels[count])
+    count += 1    
 
 
 
