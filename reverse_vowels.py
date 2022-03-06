@@ -20,4 +20,22 @@ for i in range(len(indeks)) :
   consonants.insert(indeks[i], vowels[i])
 print("".join(consonants))
 
-    
+    #SOLUTION2
+text = "leetcode"
+vowels = "aeiouAEIOU"
+
+text_vowels = [i for i in text if i in vowels]
+"".join([i if i not in text_vowels else text_vowels.pop(-1) for i in text])
+
+    #
+
+
+
+
+
+
+
+
+
+
+
