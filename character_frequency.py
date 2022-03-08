@@ -4,4 +4,17 @@
 
     #SOLUTION
 
-    
+s = input("")
+s_dict = {}
+for i in s :
+  if i not in s_dict :
+    s_dict[i] = 1
+  else:
+    s_dict[i] += 1
+
+s_dict
+
+    s = "google"
+    {i : list(s).count(i) for i in set(s)}
+
+
