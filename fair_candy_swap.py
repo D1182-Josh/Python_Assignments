@@ -37,6 +37,14 @@ for i in aliceSizes :
 
         #SOLUTION2
 
+aliceSizes = [1,2,5]
+bobSizes = [2,4]
+
+diff = sum(aliceSizes) - sum(bobSizes)
+for i in aliceSizes :
+  if (i - diff / 2) in bobSizes :
+    print([i, i- diff // 2])
+    break
         
 
 
