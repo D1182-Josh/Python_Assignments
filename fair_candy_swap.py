@@ -21,6 +21,24 @@
         Alice and Bob have a different total number of candies. There will be at least one valid answer for the given input.
 
 
-        #SOLUTION
+        #SOLUTION1
+
+aliceSizes = [2]
+bobSizes = [1,3]
+
+need_alice = (sum(aliceSizes) + sum(bobSizes)) // 2 - sum(aliceSizes) 
+
+for i in aliceSizes :
+  temp = i + need_alice
+  if temp in set(bobSizes) :
+    print([i,temp])
+    break
+        
+
+        #SOLUTION2
 
         
+
+
+
+
