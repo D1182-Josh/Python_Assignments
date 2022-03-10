@@ -6,4 +6,12 @@
 
     #SOLUTION
 
+a,b = 0, 1
+even_fibo = []
+
+while b < 4000000 :
+  a,b = b, a+b
+  if b % 2 == 0 :
+    even_fibo += [b]
     
+print(sum(even_fibo))    
