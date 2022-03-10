@@ -13,4 +13,8 @@
 
       #SOLUTION
 
-      
+arry1 = [10,20,10,2]
+arry2 = [10,25,5,-2]
+
+print(sum([(arry2[i] - arry1[i]) ** 2 for i in range(len(arry1))]) / len(arry1))
+        
