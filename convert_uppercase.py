@@ -4,4 +4,5 @@
 
     #SOLUTION
 
-    
+s = input("")
+"".join([i.upper() for i in s if len([i for i in s[:4] if i.isupper()]) >= 2])    
