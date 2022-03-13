@@ -12,8 +12,10 @@
     Notes:
 
         The total world's landmass is 148,940,000[Km^2]
-        Round the result to two decimal places.
+     #   Round the result to two decimal places.
 
     #SOLUTION
 
-    
+
+country, area= input("") ,int(input(""))
+print("{} is {}% of the total world's landmess".format(country, round((area * 100 / 148940000), 2)))    
