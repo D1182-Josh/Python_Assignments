@@ -44,6 +44,6 @@ else :
 
     #SOLUTION4
 
-    
+print(* range(0,3,2))    
 
       
