@@ -19,6 +19,19 @@ max([j for i in edges for j in i ], key=[j for i in edges for j in i ].count)
 
     #SOLUTION2
 
-    
+num = list(map(int, input().split()))
+liste = []
+if len(num) % 2 == 0 :
+  for i in range(0,len(num) // 2 +1,2) :
+    liste += [[num[i],num[i+1]]]
+  for i in range(len(liste)-1) :
+    if len(set(liste[i]) - set(liste[i+1])) == 1 :
+      print(liste)
+    else :
+      print("yıldız oluşturmaya uygun bir sayı dizesi giriniz")
+else :
+  print("yıldız oluşturmaya uygun bir sayı dizesi giriniz")
+
+    #SOLUTION3
 
       
