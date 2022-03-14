@@ -33,5 +33,17 @@ else :
   print("yıldız oluşturmaya uygun bir sayı dizesi giriniz")
 
     #SOLUTION3
+    
+print(liste)
+for i in range(len(liste)-1) :
+  if len(set(liste[i]) - set(liste[i+1])) == 1 :
+    print(liste)
+else :
+  print("yıldız oluşturmaya uygun bir sayı dizesi giriniz")
+
+
+    #SOLUTION4
+
+    
 
       
