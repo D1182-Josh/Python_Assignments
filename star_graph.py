@@ -11,6 +11,14 @@
         Input: edges = [[1,2],[5,1],[1,3],[1,4]]
         Output: 1
 
-      #SOLUTION
+      #SOLUTION1
+
+edges = [[1,2],[2,3],[4,2]]
+
+max([j for i in edges for j in i ], key=[j for i in edges for j in i ].count)
+
+    #SOLUTION2
+
+    
 
       
