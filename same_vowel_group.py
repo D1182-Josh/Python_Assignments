@@ -22,10 +22,22 @@ for i in range(1,len(new_words)) :
     same += [words[i]]
 
 print(same)
-
+    ...['hoop', 'bot', 'bottom']
 
         #SOLUTION2
     
-        
+def same_vowel_group(words):
+    new_words = []
+    for i in words :
+        for j in i :
+            if j not in "aeiou" :
+                i = i.replace(j, "")
+        new_words += [i]
+    same = [words[0]]
+    for i in range(1,len(new_words)) :
+        if set(new_words[0]) == set(new_words[i]) :
+            same += [words[i]]
+    return same
+same_vowel_group(["hoops", "chuff", "bot", "bottom"])
 
-    
+    ...['hoop', 'bot', 'bottom']
