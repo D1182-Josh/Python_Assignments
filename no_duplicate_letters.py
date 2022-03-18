@@ -18,6 +18,10 @@ all([len(i) == len(set(i)) for i in text])
 
     #SOLUTION2
 
-    
+def no_duplicate_letters(text) :
+  text = text.split()
+  return all([len(i) == len(set(i)) for i in text])
+
+no_duplicate_letters("Fortune favours the bold.")    
 
      
