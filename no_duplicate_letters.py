@@ -10,6 +10,14 @@
       Duplicate letters in "apple", ,"keeps", "doctor", and "away".
 
 
-     #SOLUTION
+     #SOLUTION1
+
+text = "Look before you leap.".split()
+
+all([len(i) == len(set(i)) for i in text])
+
+    #SOLUTION2
+
+    
 
      
