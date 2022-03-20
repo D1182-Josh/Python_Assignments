@@ -17,4 +17,7 @@ Examples:
 
     #SOLUTION
 
-    
+def sum_missing_numbers(liste) :
+  return sum([i for i in range(min(liste), max(liste)) if i not in liste])
+  
+sum_missing_numbers([4,3,8,1,2])    
