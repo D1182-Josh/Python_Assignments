@@ -8,6 +8,13 @@
 
     #SOLUTION1
 
+arry = [[3], 4, [2], [5], 1, 6]
+n_arry = sorted([arry[i][0] if type(arry[i]) == list else arry[i] for i in range(len(arry))])
+for i in range(len(n_arry)) :
+    ... [ 1, 2, 3, 4, 5, 6]
 
+    #SOLUTION2
+ 
+ 
 
     
