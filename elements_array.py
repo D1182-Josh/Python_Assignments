@@ -15,6 +15,12 @@ for i in range(len(n_arry)) :
 
     #SOLUTION2
  
- 
+def sortIt(arry) :
+  n_arry = sorted([arry[i][0] if type(arry[i]) == list else arry[i] for i in range(len(arry))])
+  return [[n_arry[i]] if n_arry[i] not in arry else n_arry[i] for i in range(len(arry))]
+
+sortIt([[3], 4, [2], [5], 1, 6])
+... [1, [2], [3], 4, [5], 6]
+
 
     
