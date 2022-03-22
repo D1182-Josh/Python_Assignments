@@ -6,3 +6,9 @@ Allowed characters are uppercase / lowercase latin letters and digits from 0 to 
 No whitespaces / underscore
 
     #SOLUTION
+
+def alphanum(text) :
+  return text.isalnum()
+
+alphanum("Clarus way010")
+... False
