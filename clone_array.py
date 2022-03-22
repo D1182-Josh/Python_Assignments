@@ -6,6 +6,17 @@
          clone([1, 2, 3]) --> [1, 2, 3, [1, 2, 3]]
          clone (["x", "y"]) --> ["x", "y"]]
 
-     #SOLUTION
+     #SOLUTION1
 
-     
+arry = [1, 1]
+(lambda x : x +[x])(arry)
+... [1, 1, [1, 1]]
+
+    #SOLUTION2
+
+def clone(arry):
+  return (lambda x : x + [x])(arry)
+clone([1,1])
+
+
+
