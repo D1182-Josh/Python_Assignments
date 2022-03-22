@@ -13,4 +13,12 @@
 
      #SOLUTION
 
-     
+
+def miniPeaks(arry) :
+  return [arry[i] for i in range(1,len(arry)-1) if arry[i] > arry[i-1] and arry[i] > arry[i+1]]
+
+print(miniPeaks([4, 5, 2, 1, 4, 9, 7, 2]))
+print(miniPeaks([]))
+... [5, 9]
+    []
+
