@@ -65,7 +65,19 @@ prime_factor(130)
 ... [2, 5, 13]
 
         #SOLUTION4
+# array_diff([1,2],[1]) == [2]
+a = [1,2,2,2,3]
+b = [2,4] 
 
+for i in b :
+  if i in a :
+    for j in range(0,a.count(i)) :
+      a.remove(i)
+
+[i for i in a if i not in b]
+... [1, 3]
+
+        
 
 
 
