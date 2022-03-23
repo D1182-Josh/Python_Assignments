@@ -50,7 +50,25 @@ prime_factors(111)
 
         #SOLUTION3
 
-        
+def prime_factor(num) :
+  counter = 2
+  prime_factors = []
+  while num != 1 :
+    if not num % counter :
+      prime_factors += [counter]
+      num /= counter
+    else:
+      counter += 1
+  return prime_factors
+
+prime_factor(130)
+... [2, 5, 13]
+
+        #SOLUTION4
+
+
+
+
 
 
 
