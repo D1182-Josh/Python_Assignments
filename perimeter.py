@@ -19,7 +19,16 @@ perimeter(7)
 ... 216
 
     #SOLUTION2
+def perimetre(n) :
+  numbers = [0,1]
+  for i in range(0,n) :
+    numbers += [numbers[i]+ numbers[i+1]]
+  return sum(numbers) * 4
 
+perimetre(7)
+... 216 
+        #SOLUTION3
+        
 
 
 
