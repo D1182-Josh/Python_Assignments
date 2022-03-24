@@ -77,7 +77,18 @@ for i in b :
 [i for i in a if i not in b]
 ... [1, 3]
 
-        
+       #SOLUTION5
+
+ n, x = map(int, input().split())
+
+arry = []
+for i in range(x) :
+    arry.append(map(float, input().split()))
+
+print(*zip(arry))
+... 5 2
+    1 2 3
+    1 2 3
 
 
 
