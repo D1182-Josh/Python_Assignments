@@ -28,7 +28,30 @@ def perimetre(n) :
 perimetre(7)
 ... 216 
         #SOLUTION3
-        
+arry = [1, 2, 3, 4, 9, 10, 11, 12, 99, 100, 101 ,200] 
+["1-4" ,"9-12", "99-101", "200"]
+
+
+indeks = []
+for i in range(len(arry)-1) :
+  if arry[i+1] - arry[i] != 1 :
+    indeks += [arry[i]]
+new_arry = []
+print(indeks)
+if len(indeks) == 0 :
+  new_arry += ["{} - {}". format(min(arry), max(arry))]
+elif len(indeks) == 1 :
+  temp = []
+  temp += [arry[:arry.index(indeks[0])+1]]
+  temp += [arry[arry.index(indeks[0])+1 :]]
+  new_arry += ["{} - {}". format(min(temp[0]), max(temp[0]))]
+  new_arry += ["{} - {}". format(min(temp[1]), max(temp[1]))]
+
+
+print(new_arry)
+
+... [4, 12]
+    []
 
 
 
