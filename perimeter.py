@@ -8,4 +8,19 @@ Hint:
 
     #SOLUTION1
 
-    
+def perimeter(n) :
+  a,b = 1,1
+  fibo = [a,b]
+  while len(fibo) <= n :
+    a,b = b, a+b
+    fibo += [b]
+  return sum(fibo) * 4
+perimeter(7)
+... 216
+
+    #SOLUTION2
+
+
+
+
+
