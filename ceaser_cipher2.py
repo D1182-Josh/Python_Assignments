@@ -4,4 +4,10 @@
 
     #SOLUTION
 
-    
+def caesarCipher(text, n) :
+  letters = "abcdefghijklmnopqrstuvwxyz"
+  return "".join([letters[(letters.index(i) + n) % len(letters)] if i.isalpha() else i for i in text])
+
+caesarCipher("abcd ?? xyz", 4)
+...  'efgh ?? bcd'
+
