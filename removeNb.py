@@ -18,4 +18,9 @@
 
     #SOLUTION
 
-    
+def removeNb(num) :
+  return [[i,j] for i in range(1,num+1) for j in range(1,num+1) if i * j  == sum([i for i in range(1,num + 1)]) - i - j]
+
+removeNb(26)
+ ... [[15, 21], [21,15]]
+
