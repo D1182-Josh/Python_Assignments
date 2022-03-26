@@ -9,6 +9,16 @@
     [1,4] => 5 is counted out
     [4] => 1 is counted out, 4 is the last element - the survivor
 
-    #SOLUTION
+    #SOLUTION1
 
-    
+liste = [1 ,2 ,3 ,4 ,5 ,6 ,7 ,8 ,9]
+indeks = 0
+uzunluk = len(liste)
+while len(liste) > 0 :
+  indeks = (2 + indeks) % uzunluk
+  liste.pop(indeks)
+  print(liste)
+  uzunluk -= 1
+
+    #SOLUTION2
+
