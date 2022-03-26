@@ -21,4 +21,13 @@ while len(liste) > 0 :
   uzunluk -= 1
 
     #SOLUTION2
+def josephus_survivor(people,steps) :
+  liste = [i for i in range(1,people+1)]
+  indeks = 0
+  while len(liste) > 1 :
+    indeks = (steps - 1 + indeks) % len(liste)
+    liste.pop(indeks)
+  return liste[0]
 
+josephus_survivor(14,2)
+ ... 13
