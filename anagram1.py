@@ -14,4 +14,10 @@
 
         #SOLUTION
 
-        
+def anagrams(word, word_list):
+  return [i for i in word_list if sorted(list(word)) == sorted(list(i))]
+
+anagrams("abba", ['aabb', 'abcd', 'bbaa', 'dada'])
+... ['aabb', 'bbaa']
+
+
