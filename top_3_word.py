@@ -12,4 +12,11 @@ Examples
 
     #SOLUTION
 
-    
+def top_3_words(string) :
+  string = string.lower()
+  new_str = "".join([i if i.isalpha() or i == "'" else " " for word in string for i in word]).split()
+  return sorted(set(new_str), key = new_str.count , reverse=True)[:3]
+  
+top_3_words("  //wont won't won't")
+... ["won't", 'wont']
+
