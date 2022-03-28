@@ -13,4 +13,13 @@ sum_pairs([10, 5, 2, 3, 7, 5],         10)
 
         #SOLUTION
 
-        
+def sum_pairs(arry, num) :
+  set_arry = set()
+  for i in arry :
+    if num - i in set_arry :
+      return [num-i, i]
+    set_arry.add(i)
+
+sum_pairs([10, 5, 2, 3, 7, 5], 10)
+... [3, 7]
+
