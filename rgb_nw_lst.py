@@ -27,6 +27,15 @@ rgb(255,255,255)
 
         #SOLUTION2
 
+def rgb(r,g,b) :
+  r,g,b = [0 if i < 0 else 255 if i > 255 else i for i in (r,g,b)]
+  return("{:02X}{:02X}{:02X}".format(r,g,b))
+
+rgb(255,255,255)
+... 'FFFFFF'
+
+        #SOLUTION3
+
         
 
 
