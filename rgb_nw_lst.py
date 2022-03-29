@@ -12,4 +12,28 @@ rgb(148, 0, 211) # returns 9400D3
 
     #SOLUTION1
 
-    
+def rgb(r,g,b) :
+  new_lst = []
+  for i in [r,b,g] :
+    if i < 0 : new_lst += [0] 
+    if i > 255 : new_lst += [255]
+    else : new_lst += [i]
+  r,b,g = new_lst
+  output = "%02x%02x%02x" % (r, g, b)
+  return output.upper()
+
+rgb(255,255,255)
+... 'FFFFFF'
+
+        #SOLUTION2
+
+        
+
+
+
+
+
+
+
+
+
