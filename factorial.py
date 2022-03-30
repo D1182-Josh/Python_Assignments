@@ -23,6 +23,21 @@
 #Hint: You're not meant to calculate the factorial. Find another way to find the number of zeros.
 
     #SOLUTION
+def zeros(n) :
+  facto = 1
+  for i in range(n,1,-1) :
+    facto *= i
+  count = 0
+  while True :
+    if facto % 10 == 0 :
+      count += 1
+      facto //= 10
+    else :
+      break
+  return count
+
+zeros(30)
+...  7
 
 
 
