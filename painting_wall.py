@@ -15,4 +15,9 @@ IMPORTANT: Notice the name of the function and parameters must match those on li
 
     #SOLUTION
 
-    
+def paint_wall(height, width, coverage) :
+  return round(height * width / coverage)
+
+paint_wall(2,4,5)
+
+... 2
