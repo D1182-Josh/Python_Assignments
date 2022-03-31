@@ -19,7 +19,12 @@ If no pairs are found, return an empty array [].
 You are only allowed to use each number once in a pair.    
 
     #SOLUTION
+def allPairs(arry, num) :
+  return sorted([[arry[i], arry[j]] for i in range(0,len(arry)) for j in range(i+1, len(arry)) if arry[i] + arry[j] == num])
 
+allPairs([2, 4, 5, 3],7)
+
+... [[2,5],[4,3]]
 
 
 
