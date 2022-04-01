@@ -27,4 +27,14 @@ You cannot swap a cup with itself.
 
         #SOLUTION
 
-        
+def cup_swapping(lst) :
+  ball = "B"
+  for i in arry :
+    if ball in i :
+      i = i.replace(ball, "")
+      ball = i
+  return ball
+
+cup_swapping(["BA", "AC", "CA", "BC"])
+
+... 'A'
