@@ -32,4 +32,22 @@ e-d-c-b-a-b-c-d-e
 
         #SOLUTION
 
-        
+num = int(input(""))
+alpha = "abcdefghijklmnopqrstuvwxyz"[0:num]
+for i in range(num-1, -num, -1):
+  x = abs(i)
+  satır = alpha[num: x:-1] + alpha[x:num]
+  print(x * "--", "-".join(satır), x * "--")
+
+... 5
+-------- e --------
+------ e-d-e ------
+---- e-d-c-d-e ----
+-- e-d-c-b-c-d-e --
+ e-d-c-b-a-b-c-d-e 
+-- e-d-c-b-c-d-e --
+---- e-d-c-d-e ----
+------ e-d-e ------
+-------- e --------
+
+
