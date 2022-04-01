@@ -22,6 +22,13 @@ All letters will be given in lowercase.
 There will be no alphabet wrapping involved, meaning the closest vowel to "z" should return "u", not "a".
 
     #SOLUTION
+def nearestVowel(string) :
+  vowel = "aeiou"
+  order = [abs(ord(i) - ord(string)) for i in vowel]
+  return vowel[order.index(min(order))]
+
+nearestVowel("g")
+... 'e'
 
 
 
