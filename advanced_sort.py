@@ -32,6 +32,20 @@ advanced_sort([5, 4, 5, 5, 4, 3])
 
 ... [[5,5,5], [4,4],[3]]
 
+    #SOLUTION2
+
+arry = [5, 4, 5, 5, 4, 3, 3, 3,3,3]
+
+dic = {}
+for i in arry :
+  if i not in dic :
+    dic[i] = [i]
+  else :
+    dic[i] += [i]
+
+list(dic.values())
+
+... [[5,5,5], [4,4],[3,3,3,3,3]]
 
 
 
