@@ -6,4 +6,11 @@
 
     #SOLUTION
 
-    
+def n_divice(n):
+  total = sum([i for i in range(1,n) if n % i == 0])
+  sum_total = sum([j for j in range(1,total) if total % j == 0])
+  if n == sum_total and n != total :
+    return n
+
+sum([n_divice(k) for k in range(1,10000) if n_divice(k) != None])
+... 31626
