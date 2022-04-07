@@ -6,4 +6,24 @@
 
     #SOLUTION1
 
-    
+n = int(input(""))
+doors = [1 if i % 2 == 0 else 0 for i in range(n)]
+
+for k in range(2,n) :
+  for j in range(k,n,k+1) :
+    if doors[j] == 1 :
+      doors[j] = 0
+    else :
+      doors[j] = 1
+print(doors.count(1))
+... 100
+    10
+
+        #SOLUTION2
+
+        
+
+
+
+
+
