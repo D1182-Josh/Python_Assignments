@@ -24,9 +24,20 @@ def snakefill(n) :
     snake *= 2
   return count
 snakefill(24)
+... 9
 
     #SOLUTION2
 
+snake = 1
+count = 0
+n = 24
+while snake * 2 <= n ** 2 :
+  count += 1
+  snake *= 2 
+
+count
+
+... 9
 
 
 
