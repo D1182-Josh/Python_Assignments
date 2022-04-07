@@ -15,8 +15,17 @@ snakefill(6) ➞ 5
 
 snakefill(24) ➞ 9
 
-    #SOLUTION
+    #SOLUTION1
 
+def snakefill(n) :
+  snake , count = 1 , 0
+  while snake*2 < n ** 2 :
+    count += 1 
+    snake *= 2
+  return count
+snakefill(24)
+
+    #SOLUTION2
 
 
 
