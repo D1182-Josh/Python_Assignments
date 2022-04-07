@@ -21,7 +21,15 @@ print(doors.count(1))
 
         #SOLUTION2
 
-        
+def locker(x):
+   locker = [0 for i in range(0, x)]
+   for i in range (0, x):
+      for j in range(i, x, i + 1):
+         if locker[j] == 0: locker[j] = 1
+         elif locker[j] == 1: locker[j] = 0
+   return locker.count(1)
+locker(100)
+... 10
 
 
 
