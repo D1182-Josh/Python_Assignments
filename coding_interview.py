@@ -38,7 +38,15 @@ Solved all the questions in their respected time limits but exceeded the total
 
 
         #SOLUTION
+def interview(lst,total_time) :
+  if len(lst) == 8 and all([i <= 5 for i in lst[:2]]) and all([i <= 10 for i in lst[2:4]]) and  all([i <= 15 for i in  lst[4:6]]) and all([i <= 20 for i in lst[6:]]) and total_time <= 120 :
+    return "qualified"
+  else :
+    return "disqualifed"
 
+interview([5, 5, 10, 10, 15, 15, 20, 20], 120)
+
+... 'qualified'
 
 
 
