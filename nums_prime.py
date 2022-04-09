@@ -5,4 +5,30 @@
 
     #SOLUTION
 
-        
+nums = [i for i in range(1,21)]
+nums_prime = []
+for i in nums :
+  prime = []
+  for j in range(2,i) :
+    prime.append(i % j != 0)
+  if all(prime) and i != 1 :
+    nums_prime += [i]
+new_number = []
+while True :
+  for i in nums_prime :
+    temp = []
+    for j in range(len(nums)) :
+      temp.append(nums[j] % i == 0)
+      if nums[j] % i == 0 :
+        nums[j] = nums[j] // i
+    if any(temp) :
+      new_number += [i]
+  if sum(nums) == 20 :
+    break
+count = 1
+for i in new_number :
+  count *= i
+print(count)
+
+
+... 232792560
