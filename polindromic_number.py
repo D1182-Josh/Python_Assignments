@@ -6,4 +6,14 @@
 
     #SOLUTION
 
-    
+nums = list(range(100,1000))
+palindrome = 0 
+for i in nums: 
+  for j in nums :
+    temp = i * j
+    if str(temp)== str(temp)[::-1] :
+      if temp > palindrome :
+        palindrome = temp
+print(palindrome)
+
+... 906609
