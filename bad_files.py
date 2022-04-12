@@ -15,4 +15,15 @@ Return "PC Files: Empty" if there are no files left on the computer.
 
     #SOLUTION
 
-    
+def remove_virus(files) :
+  files = files.split()
+  bad_files = ["virus", "malware"]
+  bad = [j for i in bad_files for j in files if (i in j) and ("anti" not in j  and "not" not in j)]
+  for k in bad :
+    files.remove(k)
+  return " ".join(files)
+
+remove_virus("PC Files: antivirus.exe, cat.pdf, lethalmalware.exe, dangerousvirus.exe ")
+... 'PC Files: antivirus.exe, cat.pdf,'
+
+
