@@ -19,4 +19,14 @@ Write a function that takes number of balls (≥ 1) and calculates how many leve
 
     #SOLUTION4
 
-    
+def pyramid(balls) :
+  num , count = 1,0
+  while balls >= num :
+    count += 1
+    num += count
+  return count
+  
+pyramid(10)
+... 4
+
+
