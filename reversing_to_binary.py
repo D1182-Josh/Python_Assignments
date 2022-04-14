@@ -7,4 +7,13 @@ You can assume that the number is not negative.
 
     #SOLUTION
 
-    
+def binary(num) :
+  bin = ""
+  while num != 0 :
+    bin += str(num % 2)
+    num = num // 2
+  return int(bin,2)
+
+binary(417)
+...  267
+
