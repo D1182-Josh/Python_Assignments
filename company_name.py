@@ -36,8 +36,15 @@ Note: The string  has at least  distinct characters.
 
     #SOLUTION
 
-    
+s = "aabbbccde"
+common = [[i, s.count(i)] for i in set(s)]
+common.sort(key = lambda x : x[-1], reverse= True)
+for i in common[:3] :
+  print(* i) 
 
+... b 3
+    c 2
+    a 2
 
 
 
