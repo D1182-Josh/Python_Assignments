@@ -14,4 +14,10 @@ Examples
 
 1                 -->  "1"
 
+
     #SOLUTION
+
+def pascalcase(text) :
+  return "".join(list(map(str.lower, [text[0]]+ ["_"+ i if i.isupper() else i for i in text[1:]])))
+
+pascalcase("TestController")
