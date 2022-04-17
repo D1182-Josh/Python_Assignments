@@ -36,6 +36,30 @@ Rotated counter-clockwise it would looks like this:
 
     #SOLUTION1
 
+# matrix = [[1, 2, 3],
+#           [4, 5, 6],
+#           [7, 8, 9]]
+
+# rotate(matrix, "clockwise")  Would return  [[7, 4, 1], [8, 5, 2],  [9, 6, 3]]
+# rotate(matrix, 'counter-clockwise'), [[3,6,9],[2,5,8],[1,4,7]])
+
+matrix = [[1, 2, 3],
+          [4, 5, 6],
+          [7, 8, 9]]
+... [[3, 6, 9], [2, 5, 8], [1, 4, 7]]
+
+    #SOLUTION2
+
+def rotate(matrix, rotation) :
+  if rotation == "clockwise" :
+    return list(map(lambda *x : [*x[::-1]], *matrix))
+  elif rotation == "counter-clockwise" :
+    return list(map(lambda *x : [*x], *matrix))[::-1]
+
+rotate([[1, 2, 3],[4, 5, 6],[7, 8, 9]], "clockwise")
+
+... [[7, 4, 1], [8, 5, 2], [9, 6, 3]]
+
 
 
 
