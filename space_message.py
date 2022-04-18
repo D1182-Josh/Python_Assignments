@@ -18,4 +18,28 @@
 
 space_message("IF[2E]LG[5O]D") ➞ "IFEELGOOOOOD"
 
-        #SOLUTION
+        #SOLUTION1
+text = "AB[3CD]EF[6G]".split("]")
+text =" ".join(text).split("[")
+text = " ".join(text).split()
+new = ""
+for i in text :
+  if i[0].isdigit() :
+    new += int(i[0]) * i[1:]
+  else :
+    new += i
+print(new)
+
+... ABCDCDCDEFGGGGGG
+
+    #SOLUTION2
+
+def space_message(text) :
+  text = text.split("]")
+  text =" ".join(text).split("[")
+  text = " ".join(text).split()
+  return "".join([int(i[0]) * i[1:] if i[0].isdigit() else i for i in text])
+
+space_message("AB[3C]EF[6G]")
+... 'ABCCCEFGGGGGG'
+
