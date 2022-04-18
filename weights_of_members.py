@@ -20,7 +20,16 @@ When two numbers have the same "weight", let us class them as if they were strin
 All numbers in the list are positive numbers and the list can be empty.
 
     #SOLUTION
+arry = "56 65 74 100 99 68 86 180 90".split()
+kilo = []
+for i in arry :
+  toplam = 0
+  for j in i :
+    toplam += int(j)
+  kilo.append(toplam)
+" ".join(sorted(arry , key = kilo.sort()))
 
+... '100 180 56 65 68 74 86 90 99'
 
 
 
